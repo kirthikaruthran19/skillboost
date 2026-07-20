@@ -25,10 +25,7 @@ load_dotenv(BASE_DIR / ".env")
 # Security
 # -------------------------------------------------
 
-SECRET_KEY = os.getenv(
-    "SECRET_KEY",
-    "django-insecure-or=(lg@sqlfo)8e&2(#ec!v7bjty94hu&_+a%4u12bz38$bbl="
-)
+SECRET_KEY = os.getenv("SECRET_KEY")
 
 DEBUG = os.getenv("DEBUG", "False") == "True"
 
