@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: skillboost-backend
+    env: python
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn skillboost.wsgi:application"
