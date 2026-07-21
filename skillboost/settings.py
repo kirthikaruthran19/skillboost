@@ -206,7 +206,7 @@ SIMPLE_JWT = {
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
-    "https://YOUR-NETLIFY-NAME.netlify.app",
+    "https://skillboost123.netlify.app",
 ]
 
 CORS_ALLOW_CREDENTIALS = True
@@ -218,3 +218,8 @@ CORS_ALLOW_CREDENTIALS = True
 # -------------------------------------------------
 
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://skillboost-backend-bc83.onrender.com",
+    "https://skillboost123.netlify.app",
+]
